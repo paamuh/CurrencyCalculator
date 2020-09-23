@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator.csproj": {}
+    "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\CurrencyCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator.csproj": {
+    "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\CurrencyCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\CurrencyCalculator.csproj",
         "projectName": "CurrencyCalculator",
-        "projectPath": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator.csproj",
+        "projectPath": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\CurrencyCalculator.csproj",
         "packagesPath": "C:\\Users\\paamu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\obj\\",
+        "outputPath": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
