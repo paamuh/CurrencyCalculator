@@ -16,15 +16,25 @@ namespace CurrencyCalculator
             //Console.WriteLine("Currency code to convert to?");
             //var toCurrency = Console.ReadLine();
 
-            //Console.WriteLine("Amount to convert?");
-            //var amount = Console.ReadLine();
-            //TODO: Check if amount is only numeric, and currencycodes is valid codes. Create two seperate validators for this.
+            Console.WriteLine("Amount to convert?");
+            bool amountValidation;
+            decimal amount;
+            do
+            {
+                var consoleAmount = Console.ReadLine();
+                amountValidation = decimal.TryParse(consoleAmount, out decimal dec);
+                amount = dec;
+                if(!amountValidation)
+                    Console.WriteLine("Amount not valid! Amount can only be numeric values");
+
+            } while (!amountValidation);
+
+
 
             var fixerController = new FixerController();
-
             var fromCurrency = "EUR";
             var toCurrency = "NOK";
-            var amount = 100m;
+            //var amount = 100m;
 
             //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
 
