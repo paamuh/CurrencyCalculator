@@ -6,8 +6,6 @@ namespace CurrencyCalculator.Fixer.Validators
     {
         public static bool ValidateCurrencyCode(string currencyCode)
         {
-            currencyCode = currencyCode.ToUpper();
-
             var ratesResponseModel = new RatesResponseModel()
             {
                 Rates = new Rates()
