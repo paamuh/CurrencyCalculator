@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using CurrencyCalculator.Fixer;
+using CurrencyCalculator.Fixer.Validators;
 
 namespace CurrencyCalculator
 {
@@ -13,8 +14,9 @@ namespace CurrencyCalculator
             //Console.WriteLine("Currency code to convert from?");
             //var fromCurrency = Console.ReadLine();
 
-            //Console.WriteLine("Currency code to convert to?");
-            //var toCurrency = Console.ReadLine();
+            Console.WriteLine("Currency code to convert to?");
+            var toCurrency = Console.ReadLine();
+            var validation = CurrencyCodeValidator.ValidateCurrencyCode(toCurrency);
 
             Console.WriteLine("Amount to convert?");
             bool amountValidation;
@@ -33,7 +35,7 @@ namespace CurrencyCalculator
 
             var fixerController = new FixerController();
             var fromCurrency = "EUR";
-            var toCurrency = "NOK";
+            //var toCurrency = "NOK";
             //var amount = 100m;
 
             //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);

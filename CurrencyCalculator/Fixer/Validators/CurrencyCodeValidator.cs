@@ -2,17 +2,20 @@
 
 namespace CurrencyCalculator.Fixer.Validators
 {
-    public class CurrencyCodeValidator
+    public static class CurrencyCodeValidator
     {
-        public bool ValidateCurrencyCode(string currencyCode)
+        public static bool ValidateCurrencyCode(string currencyCode)
         {
-            var ratesResponseModel = new RatesResponseModel();
+            currencyCode = currencyCode.ToUpper();
+
+            var ratesResponseModel = new RatesResponseModel()
+            {
+                Rates = new Rates()
+            };
 
             var property = ratesResponseModel.Rates.GetType().GetProperty(currencyCode);
 
-            var jeppjpep = property;
-
-            return false;
+            return property != null;
         }
     }
 }
