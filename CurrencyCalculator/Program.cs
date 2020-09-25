@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CurrencyCalculator.Fixer;
-using CurrencyCalculator.Fixer.Validators;
+using CurrencyCalculator.CurrencyCalculator.Controllers;
+using CurrencyCalculator.CurrencyCalculator.Fixer;
+using CurrencyCalculator.CurrencyCalculator.Services;
+using CurrencyCalculator.CurrencyCalculator.Validators;
 
 namespace CurrencyCalculator
 {
@@ -53,8 +55,8 @@ namespace CurrencyCalculator
             } while (!amountValidation);
 
 
-
-            var fixerController = new FixerController();
+            
+            var conversionController = new CurrencyConversionController(new CurrencyConversionService(new FixerApiClient()));
 
             //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
 
@@ -62,10 +64,9 @@ namespace CurrencyCalculator
 
             //Console.WriteLine(amount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency);
 
+            var date = "2019-04-04";
 
-            var date = "2015-04-25";
-
-            var returnAmount = await fixerController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
+            var returnAmount = await conversionController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
 
             var printAmount = (decimal) System.Math.Round(returnAmount, 2);
 

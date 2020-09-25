@@ -1,4 +1,4 @@
-﻿namespace CurrencyCalculator.Fixer
+﻿namespace CurrencyCalculator.CurrencyCalculator.Interfaces
 {
     public interface IFixerApiClient
     {

@@ -1,6 +1,6 @@
-﻿using CurrencyCalculator.Fixer.Models.Respons;
+﻿using CurrencyCalculator.CurrencyCalculator.Models.Response;
 
-namespace CurrencyCalculator.Fixer.Validators
+namespace CurrencyCalculator.CurrencyCalculator.Validators
 {
     public static class CurrencyCodeValidator
     {

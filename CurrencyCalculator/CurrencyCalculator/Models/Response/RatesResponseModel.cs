@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CurrencyCalculator.Fixer.Models.Respons
+﻿namespace CurrencyCalculator.CurrencyCalculator.Models.Response
 {
 
     public class RatesResponseModel

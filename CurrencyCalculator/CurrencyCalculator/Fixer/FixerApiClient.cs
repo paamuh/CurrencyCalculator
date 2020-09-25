@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Net.Http;
-using System.Reflection.PortableExecutable;
-using Newtonsoft.Json;
-using System.Security.Cryptography;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using CurrencyCalculator.Fixer.Models.Respons;
+using CurrencyCalculator.CurrencyCalculator.Models.Response;
+using Newtonsoft.Json;
 
-namespace CurrencyCalculator.Fixer
+namespace CurrencyCalculator.CurrencyCalculator.Fixer
 {
     public class FixerApiClient
     {
