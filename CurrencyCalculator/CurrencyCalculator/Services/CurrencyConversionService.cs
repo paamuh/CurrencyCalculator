@@ -9,9 +9,9 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
     {
         private readonly FixerApiClient _fixerApiClient;
 
-        public CurrencyConversionService(FixerApiClient fixerApiClient)
+        public CurrencyConversionService()
         {
-            _fixerApiClient = fixerApiClient;
+            _fixerApiClient = new FixerApiClient();
         }
 
 

@@ -56,7 +56,7 @@ namespace CurrencyCalculator
 
 
             
-            var conversionController = new CurrencyConversionController(new CurrencyConversionService(new FixerApiClient()));
+            var conversionController = new CurrencyConversionController(new CurrencyConversionService());
 
             //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
 
