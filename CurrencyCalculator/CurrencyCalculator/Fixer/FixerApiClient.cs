@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using CurrencyCalculator.CurrencyCalculator.Models.Request;
 using CurrencyCalculator.CurrencyCalculator.Models.Response;
 using Newtonsoft.Json;
 
@@ -17,10 +18,22 @@ namespace CurrencyCalculator.CurrencyCalculator.Fixer
             InitilizeHttpClient();
         }
 
-        public async Task<RatesResponseModel> GetHistoricalCurrencyRatesFromTo(string fromCurrency,
-            string toCurrency, string date)
+        private ConversionRequestModel ConvertStringsToCapital(ConversionRequestModel conversionRequest)
         {
-            var url = date + "?access_key=" + AccessKey + "&base=" + fromCurrency + "&symbols=" + toCurrency;
+            if (!string.IsNullOrWhiteSpace(conversionRequest.FromCurrency))
+                conversionRequest.FromCurrency = conversionRequest.FromCurrency.ToUpper();
+
+            if (!string.IsNullOrWhiteSpace(conversionRequest.ToCurrency))
+                conversionRequest.ToCurrency = conversionRequest.ToCurrency.ToUpper();
+
+            return conversionRequest;
+        }
+
+        public async Task<RatesResponseModel> GetHistoricalCurrencyRatesFromTo(ConversionRequestModel conversionRequest)
+        {
+            conversionRequest = ConvertStringsToCapital(conversionRequest);
+
+            var url = conversionRequest.Date + "?access_key=" + AccessKey + "&base=" + conversionRequest.FromCurrency + "&symbols=" + conversionRequest.ToCurrency;
 
             var response = await _httpClient.GetAsync(url);
             if (!response.IsSuccessStatusCode) return null;
@@ -29,9 +42,11 @@ namespace CurrencyCalculator.CurrencyCalculator.Fixer
         }
         //TODO: Date validator? In the controller.
 
-        public async Task<RatesResponseModel> GetCurrentCurrencyRatesFromTo(string fromCurrency, string toCurrency)
+        public async Task<RatesResponseModel> GetCurrentCurrencyRatesFromTo(ConversionRequestModel conversionRequest)
         {
-            var url = "latest?access_key=" + AccessKey + "&base=" + fromCurrency + "&symbols=" + toCurrency;
+            conversionRequest = ConvertStringsToCapital(conversionRequest);
+
+            var url = "latest?access_key=" + AccessKey + "&base=" + conversionRequest.FromCurrency + "&symbols=" + conversionRequest.ToCurrency;
 
             var response = await _httpClient.GetAsync(url);
             if (!response.IsSuccessStatusCode) return null;

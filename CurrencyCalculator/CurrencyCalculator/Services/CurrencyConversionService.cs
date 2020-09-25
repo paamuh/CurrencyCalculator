@@ -22,7 +22,7 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
 
         public async Task<decimal> ConvertCurrencyFromAmountTo(ConversionRequestModel conversionRequest)
         {
-            var result = await _fixerApiClient.GetCurrentCurrencyRatesFromTo(conversionRequest.FromCurrency, conversionRequest.ToCurrency);
+            var result = await _fixerApiClient.GetCurrentCurrencyRatesFromTo(conversionRequest);
 
             if (!result.Success) return 0m;
 
@@ -40,7 +40,7 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
 
         public async Task<decimal> ConvertCurrencyFromHistoricalRates(ConversionRequestModel conversionRequest)
         {
-            var result = await _fixerApiClient.GetHistoricalCurrencyRatesFromTo(conversionRequest.FromCurrency, conversionRequest.ToCurrency, conversionRequest.Date);
+            var result = await _fixerApiClient.GetHistoricalCurrencyRatesFromTo(conversionRequest);
 
             if (!result.Success) return 0m;
 
