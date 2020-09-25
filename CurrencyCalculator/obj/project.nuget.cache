@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N7GPpjOfWFIXoS5ECe67xBee+5UJkylGvmiYMxyRTwgcCkZ5KD7QMjX0bhVFB19AJRaJZhn3daXln7uNW+nixw==",
+  "dgSpecHash": "3udDK0OxqEQlEhIjoJYn0M32TuAGVqYLKJYMC3Z5MeXzRXxPFKDdW1x1fD4MBtRqoJqW8ORmccgKhKl98eRsPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\paamu\\Documents\\CurrencyCalculator\\CurrencyCalculator\\CurrencyCalculator.csproj",
+  "projectFilePath": "C:\\Users\\paamu\\Documents\\SourceTree\\CurrencyCalculator\\CurrencyCalculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paamu\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
