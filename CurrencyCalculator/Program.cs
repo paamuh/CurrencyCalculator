@@ -66,9 +66,9 @@ namespace CurrencyCalculator
 
             var date = "2019-04-04";
 
-            var returnAmount = await conversionController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
+            var result = await conversionController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
 
-            var printAmount = (decimal) System.Math.Round(returnAmount, 2);
+            var printAmount = (decimal) System.Math.Round(result.ToConversion.Amount, 2);
 
             Console.WriteLine(amount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency + " in " + date);
 

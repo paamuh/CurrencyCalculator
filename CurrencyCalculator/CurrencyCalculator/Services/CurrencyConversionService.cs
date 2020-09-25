@@ -1,7 +1,9 @@
 ﻿using System.Threading.Tasks;
 using CurrencyCalculator.CurrencyCalculator.Fixer;
 using CurrencyCalculator.CurrencyCalculator.Interfaces;
+using CurrencyCalculator.CurrencyCalculator.Mappers;
 using CurrencyCalculator.CurrencyCalculator.Models.Request;
+using CurrencyCalculator.CurrencyCalculator.Models.Response;
 
 namespace CurrencyCalculator.CurrencyCalculator.Services
 {
@@ -15,45 +17,46 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
         }
 
 
-        public Task<decimal> GetCurrentCurrencyFromTo(ConversionRequestModel conversionRequest)
+        public Task<ConversionResultModel> GetCurrentCurrencyFromTo(ConversionRequestModel conversionRequest)
         {
             throw new System.NotImplementedException();
         }
 
-        public async Task<decimal> ConvertCurrencyFromAmountTo(ConversionRequestModel conversionRequest)
+        public async Task<ConversionResultModel> ConvertCurrencyFromAmountTo(ConversionRequestModel conversionRequest)
         {
-            var result = await _fixerApiClient.GetCurrentCurrencyRatesFromTo(conversionRequest);
+            var conversionResult = ConversionRequestToConversionResultMapper.MapConversionRequestToConversionResult(conversionRequest);
 
-            if (!result.Success) return 0m;
+            var response = await _fixerApiClient.GetCurrentCurrencyRatesFromTo(conversionRequest);
 
-            var property = result.Rates.GetType().GetProperty(conversionRequest.ToCurrency);
-            if (property != null)
-            {
-                var toRate = property.GetValue(result.Rates, null).ToString();
+            if (!response.Success) return conversionResult;
 
-                var decimalRate = decimal.Parse(toRate);
+            conversionResult.ToConversion.Amount = GetConvertedAmount(response, conversionRequest);
 
-                return decimalRate * conversionRequest.Amount;
-            }
-            return 0m;
+            return conversionResult;
         }
 
-        public async Task<decimal> ConvertCurrencyFromHistoricalRates(ConversionRequestModel conversionRequest)
+        public async Task<ConversionResultModel> ConvertCurrencyFromHistoricalRates(ConversionRequestModel conversionRequest)
         {
-            var result = await _fixerApiClient.GetHistoricalCurrencyRatesFromTo(conversionRequest);
+            var conversionResult = ConversionRequestToConversionResultMapper.MapConversionRequestToConversionResult(conversionRequest);
 
-            if (!result.Success) return 0m;
+            var response = await _fixerApiClient.GetHistoricalCurrencyRatesFromTo(conversionRequest);
 
-            var property = result.Rates.GetType().GetProperty(conversionRequest.ToCurrency);
-            if (property != null)
-            {
-                var toRate = property.GetValue(result.Rates, null).ToString();
+            if (!response.Success) return conversionResult;//return conversionResult
 
-                var decimalRate = decimal.Parse(toRate);
+            conversionResult.ToConversion.Amount = GetConvertedAmount(response, conversionRequest);
 
-                return decimalRate * conversionRequest.Amount;
-            }
-            return 0m;
+            return conversionResult;
+        }
+
+        private decimal GetConvertedAmount(RatesResponseModel rates, ConversionRequestModel conversionRequest)
+        {
+            var property = rates.Rates.GetType().GetProperty(conversionRequest.ToCurrency);
+            if (property == null) return 0m;
+            var toRate = property.GetValue(rates.Rates, null).ToString();
+
+            var decimalRate = decimal.Parse(toRate);
+
+            return decimalRate * conversionRequest.Amount;
         }
     }
 }
