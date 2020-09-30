@@ -16,6 +16,10 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
             _fixerApiClient = new FixerApiClient();
         }
 
+        public async Task<RatesResponseModel> GetAllCurrentRates()
+        {
+            return await _fixerApiClient.GetAllCurrentRates();
+        }
 
         public Task<ConversionResultModel> GetCurrentCurrencyFromTo(ConversionRequestModel conversionRequest)
         {

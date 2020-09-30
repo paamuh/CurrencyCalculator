@@ -18,15 +18,14 @@ namespace CurrencyCalculator.CurrencyCalculator.Fixer
             InitilizeHttpClient();
         }
 
-        private ConversionRequestModel ConvertStringsToCapital(ConversionRequestModel conversionRequest)
+        public async Task<RatesResponseModel> GetAllCurrentRates()
         {
-            if (!string.IsNullOrWhiteSpace(conversionRequest.FromCurrency))
-                conversionRequest.FromCurrency = conversionRequest.FromCurrency.ToUpper();
+            var url = "latest?access_key=" + AccessKey;
 
-            if (!string.IsNullOrWhiteSpace(conversionRequest.ToCurrency))
-                conversionRequest.ToCurrency = conversionRequest.ToCurrency.ToUpper();
-
-            return conversionRequest;
+            var response = await _httpClient.GetAsync(url);
+            if (!response.IsSuccessStatusCode) return null;
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<RatesResponseModel>(json);
         }
 
         public async Task<RatesResponseModel> GetHistoricalCurrencyRatesFromTo(ConversionRequestModel conversionRequest)
@@ -54,23 +53,23 @@ namespace CurrencyCalculator.CurrencyCalculator.Fixer
             return JsonConvert.DeserializeObject<RatesResponseModel>(json);
         }
 
-        public async Task<RatesResponseModel> GetCurrentAllRates()
-        {
-            var url = "latest?access_key=" + AccessKey;
-
-            var response = await _httpClient.GetAsync(url);
-            if (!response.IsSuccessStatusCode) return null;
-            var json = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<RatesResponseModel>(json);
-        }
-
-
         private void InitilizeHttpClient()
         {
             _httpClient = new HttpClient()
             {
                 BaseAddress = new Uri(BaseUrl)
             };
+        }
+
+        private ConversionRequestModel ConvertStringsToCapital(ConversionRequestModel conversionRequest)
+        {
+            if (!string.IsNullOrWhiteSpace(conversionRequest.FromCurrency))
+                conversionRequest.FromCurrency = conversionRequest.FromCurrency.ToUpper();
+
+            if (!string.IsNullOrWhiteSpace(conversionRequest.ToCurrency))
+                conversionRequest.ToCurrency = conversionRequest.ToCurrency.ToUpper();
+
+            return conversionRequest;
         }
     }
 }

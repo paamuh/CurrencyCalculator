@@ -14,6 +14,11 @@ namespace CurrencyCalculator.CurrencyCalculator.Controllers
             _currencyConversionService = currencyConversionService;
         }
 
+        public async Task<RatesResponseModel> GetAllCurrentRates()
+        {
+            return await _currencyConversionService.GetAllCurrentRates();
+        }
+
         public async Task<ConversionResultModel> GetCurrentCurrencyFromTo(string fromCurrency, string toCurrency)
         {
             var request = new ConversionRequestModel()

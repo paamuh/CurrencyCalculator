@@ -11,6 +11,10 @@ namespace CurrencyCalculator
     {
         static async Task Main(string[] args)
         {
+            var conversionController = new CurrencyConversionController(new CurrencyConversionService());
+
+            await conversionController.GetAllCurrentRates();
+            
             Console.WriteLine("This is an currency calculator, who takes currencyCodes and Amount as input.");
 
             Console.WriteLine("Currency code to convert from?");
@@ -56,7 +60,7 @@ namespace CurrencyCalculator
 
 
             
-            var conversionController = new CurrencyConversionController(new CurrencyConversionService());
+            
 
             //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
 
