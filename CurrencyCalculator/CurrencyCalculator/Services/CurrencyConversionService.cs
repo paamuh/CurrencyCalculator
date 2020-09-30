@@ -45,7 +45,7 @@ namespace CurrencyCalculator.CurrencyCalculator.Services
 
             var response = await _fixerApiClient.GetHistoricalCurrencyRatesFromTo(conversionRequest);
 
-            if (!response.Success) return conversionResult;//return conversionResult
+            if (!response.Success) return null;//return conversionResult
 
             conversionResult.ToConversion.Amount = GetConvertedAmount(response, conversionRequest);
 

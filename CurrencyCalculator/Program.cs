@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Net.WebSockets;
 using System.Threading.Tasks;
 using CurrencyCalculator.CurrencyCalculator.Controllers;
 using CurrencyCalculator.CurrencyCalculator.Fixer;
+using CurrencyCalculator.CurrencyCalculator.Models.Response;
 using CurrencyCalculator.CurrencyCalculator.Services;
 using CurrencyCalculator.CurrencyCalculator.Validators;
 
@@ -11,10 +13,6 @@ namespace CurrencyCalculator
     {
         static async Task Main(string[] args)
         {
-            var conversionController = new CurrencyConversionController(new CurrencyConversionService());
-
-            await conversionController.GetAllCurrentRates();
-            
             Console.WriteLine("This is an currency calculator, who takes currencyCodes and Amount as input.");
 
             Console.WriteLine("Currency code to convert from?");
@@ -58,23 +56,42 @@ namespace CurrencyCalculator
 
             } while (!amountValidation);
 
+            var conversionController = new CurrencyConversionController(new CurrencyConversionService());
+
+            var result = await conversionController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
+
+            var printAmount = (decimal)System.Math.Round(result.ToConversion.Amount, 2);
+
+            Console.WriteLine(amount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency + " today.");
+
+            Console.ReadLine();
+
+            Console.WriteLine("Add date to get historical conversion. Dateformat YYYY-MM-DD");
+
+
+            ConversionResultModel historicalResult;
+            var historicalPrintAmount = 0m;
+            var date = "";
+            var historicalSuccess = false;
+
+
+            do
+            {
+                date = Console.ReadLine();
+                historicalResult = await conversionController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
+                if (historicalResult == null)
+                    Console.WriteLine("Date not valid!");
+                else
+                    historicalSuccess = true;
+
+            } while (!historicalSuccess);
+
 
             
-            
+            historicalPrintAmount = (decimal) System.Math.Round(historicalResult.ToConversion.Amount, 2);
 
-            //var returnAmount = await fixerController.ConvertCurrencyFromAmountTo(fromCurrency, toCurrency, amount);
 
-            //var printAmount = (decimal) System.Math.Round(returnAmount, 2);
-
-            //Console.WriteLine(amount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency);
-
-            var date = "2019-04-04";
-
-            var result = await conversionController.ConvertCurrencyFromHistoricalRates(fromCurrency, toCurrency, amount, date);
-
-            var printAmount = (decimal) System.Math.Round(result.ToConversion.Amount, 2);
-
-            Console.WriteLine(amount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency + " in " + date);
+            Console.WriteLine(historicalPrintAmount + " " + fromCurrency + " equals " + printAmount + " " + toCurrency + " in " + date);
 
         }
     }
