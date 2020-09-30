@@ -1,0 +1,879 @@
+﻿@page
+@model RazorCurrencyRatesDB.Pages.CurrencyRates.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>CurrencyRates</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.Date" class="control-label"></label>
+                <input asp-for="CurrencyRates.Date" class="form-control" />
+                <span asp-validation-for="CurrencyRates.Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.Base" class="control-label"></label>
+                <input asp-for="CurrencyRates.Base" class="form-control" />
+                <span asp-validation-for="CurrencyRates.Base" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AED" class="control-label"></label>
+                <input asp-for="CurrencyRates.AED" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AED" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AFN" class="control-label"></label>
+                <input asp-for="CurrencyRates.AFN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AFN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ALL" class="control-label"></label>
+                <input asp-for="CurrencyRates.ALL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ALL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AMD" class="control-label"></label>
+                <input asp-for="CurrencyRates.AMD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AMD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ANG" class="control-label"></label>
+                <input asp-for="CurrencyRates.ANG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ANG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AOA" class="control-label"></label>
+                <input asp-for="CurrencyRates.AOA" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AOA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ARS" class="control-label"></label>
+                <input asp-for="CurrencyRates.ARS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ARS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AUD" class="control-label"></label>
+                <input asp-for="CurrencyRates.AUD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AUD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AWG" class="control-label"></label>
+                <input asp-for="CurrencyRates.AWG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AWG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.AZN" class="control-label"></label>
+                <input asp-for="CurrencyRates.AZN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.AZN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BAM" class="control-label"></label>
+                <input asp-for="CurrencyRates.BAM" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BBD" class="control-label"></label>
+                <input asp-for="CurrencyRates.BBD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BBD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BDT" class="control-label"></label>
+                <input asp-for="CurrencyRates.BDT" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BDT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BGN" class="control-label"></label>
+                <input asp-for="CurrencyRates.BGN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BGN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BHD" class="control-label"></label>
+                <input asp-for="CurrencyRates.BHD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BHD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BIF" class="control-label"></label>
+                <input asp-for="CurrencyRates.BIF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BIF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BMD" class="control-label"></label>
+                <input asp-for="CurrencyRates.BMD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BMD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BND" class="control-label"></label>
+                <input asp-for="CurrencyRates.BND" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BND" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BOB" class="control-label"></label>
+                <input asp-for="CurrencyRates.BOB" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BOB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BRL" class="control-label"></label>
+                <input asp-for="CurrencyRates.BRL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BRL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BSD" class="control-label"></label>
+                <input asp-for="CurrencyRates.BSD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BSD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BTC" class="control-label"></label>
+                <input asp-for="CurrencyRates.BTC" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BTC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BTN" class="control-label"></label>
+                <input asp-for="CurrencyRates.BTN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BTN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BWP" class="control-label"></label>
+                <input asp-for="CurrencyRates.BWP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BWP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BYN" class="control-label"></label>
+                <input asp-for="CurrencyRates.BYN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BYN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BYR" class="control-label"></label>
+                <input asp-for="CurrencyRates.BYR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BYR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.BZD" class="control-label"></label>
+                <input asp-for="CurrencyRates.BZD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.BZD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CAD" class="control-label"></label>
+                <input asp-for="CurrencyRates.CAD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CAD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CDF" class="control-label"></label>
+                <input asp-for="CurrencyRates.CDF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CDF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CHF" class="control-label"></label>
+                <input asp-for="CurrencyRates.CHF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CHF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CLF" class="control-label"></label>
+                <input asp-for="CurrencyRates.CLF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CLF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CLP" class="control-label"></label>
+                <input asp-for="CurrencyRates.CLP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CLP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CNY" class="control-label"></label>
+                <input asp-for="CurrencyRates.CNY" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CNY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.COP" class="control-label"></label>
+                <input asp-for="CurrencyRates.COP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.COP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CRC" class="control-label"></label>
+                <input asp-for="CurrencyRates.CRC" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CRC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CUC" class="control-label"></label>
+                <input asp-for="CurrencyRates.CUC" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CUC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CUP" class="control-label"></label>
+                <input asp-for="CurrencyRates.CUP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CUP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CVE" class="control-label"></label>
+                <input asp-for="CurrencyRates.CVE" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CVE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.CZK" class="control-label"></label>
+                <input asp-for="CurrencyRates.CZK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.CZK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.DJF" class="control-label"></label>
+                <input asp-for="CurrencyRates.DJF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.DJF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.DKK" class="control-label"></label>
+                <input asp-for="CurrencyRates.DKK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.DKK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.DOP" class="control-label"></label>
+                <input asp-for="CurrencyRates.DOP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.DOP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.DZD" class="control-label"></label>
+                <input asp-for="CurrencyRates.DZD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.DZD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.EGP" class="control-label"></label>
+                <input asp-for="CurrencyRates.EGP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.EGP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ERN" class="control-label"></label>
+                <input asp-for="CurrencyRates.ERN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ERN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ETB" class="control-label"></label>
+                <input asp-for="CurrencyRates.ETB" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ETB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.EUR" class="control-label"></label>
+                <input asp-for="CurrencyRates.EUR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.EUR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.FJD" class="control-label"></label>
+                <input asp-for="CurrencyRates.FJD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.FJD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.FKP" class="control-label"></label>
+                <input asp-for="CurrencyRates.FKP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.FKP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GBP" class="control-label"></label>
+                <input asp-for="CurrencyRates.GBP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GBP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GEL" class="control-label"></label>
+                <input asp-for="CurrencyRates.GEL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GEL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GGP" class="control-label"></label>
+                <input asp-for="CurrencyRates.GGP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GGP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GHS" class="control-label"></label>
+                <input asp-for="CurrencyRates.GHS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GHS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GIP" class="control-label"></label>
+                <input asp-for="CurrencyRates.GIP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GIP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GMD" class="control-label"></label>
+                <input asp-for="CurrencyRates.GMD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GMD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GNF" class="control-label"></label>
+                <input asp-for="CurrencyRates.GNF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GNF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GTQ" class="control-label"></label>
+                <input asp-for="CurrencyRates.GTQ" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GTQ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.GYD" class="control-label"></label>
+                <input asp-for="CurrencyRates.GYD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.GYD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.HKD" class="control-label"></label>
+                <input asp-for="CurrencyRates.HKD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.HKD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.HNL" class="control-label"></label>
+                <input asp-for="CurrencyRates.HNL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.HNL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.HRK" class="control-label"></label>
+                <input asp-for="CurrencyRates.HRK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.HRK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.HTG" class="control-label"></label>
+                <input asp-for="CurrencyRates.HTG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.HTG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.HUF" class="control-label"></label>
+                <input asp-for="CurrencyRates.HUF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.HUF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.IDR" class="control-label"></label>
+                <input asp-for="CurrencyRates.IDR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.IDR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ILS" class="control-label"></label>
+                <input asp-for="CurrencyRates.ILS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ILS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.IMP" class="control-label"></label>
+                <input asp-for="CurrencyRates.IMP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.IMP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.INR" class="control-label"></label>
+                <input asp-for="CurrencyRates.INR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.INR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.IQD" class="control-label"></label>
+                <input asp-for="CurrencyRates.IQD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.IQD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.IRR" class="control-label"></label>
+                <input asp-for="CurrencyRates.IRR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.IRR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ISK" class="control-label"></label>
+                <input asp-for="CurrencyRates.ISK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ISK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.JEP" class="control-label"></label>
+                <input asp-for="CurrencyRates.JEP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.JEP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.JMD" class="control-label"></label>
+                <input asp-for="CurrencyRates.JMD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.JMD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.JOD" class="control-label"></label>
+                <input asp-for="CurrencyRates.JOD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.JOD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.JPY" class="control-label"></label>
+                <input asp-for="CurrencyRates.JPY" class="form-control" />
+                <span asp-validation-for="CurrencyRates.JPY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KES" class="control-label"></label>
+                <input asp-for="CurrencyRates.KES" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KES" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KGS" class="control-label"></label>
+                <input asp-for="CurrencyRates.KGS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KGS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KHR" class="control-label"></label>
+                <input asp-for="CurrencyRates.KHR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KHR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KMF" class="control-label"></label>
+                <input asp-for="CurrencyRates.KMF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KMF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KPW" class="control-label"></label>
+                <input asp-for="CurrencyRates.KPW" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KPW" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KRW" class="control-label"></label>
+                <input asp-for="CurrencyRates.KRW" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KRW" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KWD" class="control-label"></label>
+                <input asp-for="CurrencyRates.KWD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KWD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KYD" class="control-label"></label>
+                <input asp-for="CurrencyRates.KYD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KYD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.KZT" class="control-label"></label>
+                <input asp-for="CurrencyRates.KZT" class="form-control" />
+                <span asp-validation-for="CurrencyRates.KZT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LAK" class="control-label"></label>
+                <input asp-for="CurrencyRates.LAK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LAK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LBP" class="control-label"></label>
+                <input asp-for="CurrencyRates.LBP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LBP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LKR" class="control-label"></label>
+                <input asp-for="CurrencyRates.LKR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LKR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LRD" class="control-label"></label>
+                <input asp-for="CurrencyRates.LRD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LRD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LSL" class="control-label"></label>
+                <input asp-for="CurrencyRates.LSL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LSL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LTL" class="control-label"></label>
+                <input asp-for="CurrencyRates.LTL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LTL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LVL" class="control-label"></label>
+                <input asp-for="CurrencyRates.LVL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LVL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.LYD" class="control-label"></label>
+                <input asp-for="CurrencyRates.LYD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.LYD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MAD" class="control-label"></label>
+                <input asp-for="CurrencyRates.MAD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MAD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MDL" class="control-label"></label>
+                <input asp-for="CurrencyRates.MDL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MDL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MGA" class="control-label"></label>
+                <input asp-for="CurrencyRates.MGA" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MGA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MKD" class="control-label"></label>
+                <input asp-for="CurrencyRates.MKD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MKD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MMK" class="control-label"></label>
+                <input asp-for="CurrencyRates.MMK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MMK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MNT" class="control-label"></label>
+                <input asp-for="CurrencyRates.MNT" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MNT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MOP" class="control-label"></label>
+                <input asp-for="CurrencyRates.MOP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MOP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MRO" class="control-label"></label>
+                <input asp-for="CurrencyRates.MRO" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MRO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MUR" class="control-label"></label>
+                <input asp-for="CurrencyRates.MUR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MUR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MVR" class="control-label"></label>
+                <input asp-for="CurrencyRates.MVR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MVR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MWK" class="control-label"></label>
+                <input asp-for="CurrencyRates.MWK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MWK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MXN" class="control-label"></label>
+                <input asp-for="CurrencyRates.MXN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MXN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MYR" class="control-label"></label>
+                <input asp-for="CurrencyRates.MYR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MYR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.MZN" class="control-label"></label>
+                <input asp-for="CurrencyRates.MZN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.MZN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NAD" class="control-label"></label>
+                <input asp-for="CurrencyRates.NAD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NAD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NGN" class="control-label"></label>
+                <input asp-for="CurrencyRates.NGN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NGN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NIO" class="control-label"></label>
+                <input asp-for="CurrencyRates.NIO" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NIO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NOK" class="control-label"></label>
+                <input asp-for="CurrencyRates.NOK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NOK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NPR" class="control-label"></label>
+                <input asp-for="CurrencyRates.NPR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NPR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.NZD" class="control-label"></label>
+                <input asp-for="CurrencyRates.NZD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.NZD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.OMR" class="control-label"></label>
+                <input asp-for="CurrencyRates.OMR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.OMR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PAB" class="control-label"></label>
+                <input asp-for="CurrencyRates.PAB" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PAB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PEN" class="control-label"></label>
+                <input asp-for="CurrencyRates.PEN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PEN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PGK" class="control-label"></label>
+                <input asp-for="CurrencyRates.PGK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PGK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PHP" class="control-label"></label>
+                <input asp-for="CurrencyRates.PHP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PHP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PKR" class="control-label"></label>
+                <input asp-for="CurrencyRates.PKR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PKR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PLN" class="control-label"></label>
+                <input asp-for="CurrencyRates.PLN" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PLN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.PYG" class="control-label"></label>
+                <input asp-for="CurrencyRates.PYG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.PYG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.QAR" class="control-label"></label>
+                <input asp-for="CurrencyRates.QAR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.QAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.RON" class="control-label"></label>
+                <input asp-for="CurrencyRates.RON" class="form-control" />
+                <span asp-validation-for="CurrencyRates.RON" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.RSD" class="control-label"></label>
+                <input asp-for="CurrencyRates.RSD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.RSD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.RUB" class="control-label"></label>
+                <input asp-for="CurrencyRates.RUB" class="form-control" />
+                <span asp-validation-for="CurrencyRates.RUB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.RWF" class="control-label"></label>
+                <input asp-for="CurrencyRates.RWF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.RWF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SAR" class="control-label"></label>
+                <input asp-for="CurrencyRates.SAR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SBD" class="control-label"></label>
+                <input asp-for="CurrencyRates.SBD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SBD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SCR" class="control-label"></label>
+                <input asp-for="CurrencyRates.SCR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SDG" class="control-label"></label>
+                <input asp-for="CurrencyRates.SDG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SDG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SEK" class="control-label"></label>
+                <input asp-for="CurrencyRates.SEK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SEK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SGD" class="control-label"></label>
+                <input asp-for="CurrencyRates.SGD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SGD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SHP" class="control-label"></label>
+                <input asp-for="CurrencyRates.SHP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SHP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SLL" class="control-label"></label>
+                <input asp-for="CurrencyRates.SLL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SLL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SOS" class="control-label"></label>
+                <input asp-for="CurrencyRates.SOS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SOS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SRD" class="control-label"></label>
+                <input asp-for="CurrencyRates.SRD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SRD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.STD" class="control-label"></label>
+                <input asp-for="CurrencyRates.STD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.STD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SVC" class="control-label"></label>
+                <input asp-for="CurrencyRates.SVC" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SVC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SYP" class="control-label"></label>
+                <input asp-for="CurrencyRates.SYP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SYP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.SZL" class="control-label"></label>
+                <input asp-for="CurrencyRates.SZL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.SZL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.THB" class="control-label"></label>
+                <input asp-for="CurrencyRates.THB" class="form-control" />
+                <span asp-validation-for="CurrencyRates.THB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TJS" class="control-label"></label>
+                <input asp-for="CurrencyRates.TJS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TJS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TMT" class="control-label"></label>
+                <input asp-for="CurrencyRates.TMT" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TMT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TND" class="control-label"></label>
+                <input asp-for="CurrencyRates.TND" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TND" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TOP" class="control-label"></label>
+                <input asp-for="CurrencyRates.TOP" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TOP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TRY" class="control-label"></label>
+                <input asp-for="CurrencyRates.TRY" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TRY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TTD" class="control-label"></label>
+                <input asp-for="CurrencyRates.TTD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TTD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TWD" class="control-label"></label>
+                <input asp-for="CurrencyRates.TWD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TWD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.TZS" class="control-label"></label>
+                <input asp-for="CurrencyRates.TZS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.TZS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.UAH" class="control-label"></label>
+                <input asp-for="CurrencyRates.UAH" class="form-control" />
+                <span asp-validation-for="CurrencyRates.UAH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.UGX" class="control-label"></label>
+                <input asp-for="CurrencyRates.UGX" class="form-control" />
+                <span asp-validation-for="CurrencyRates.UGX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.USD" class="control-label"></label>
+                <input asp-for="CurrencyRates.USD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.USD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.UYU" class="control-label"></label>
+                <input asp-for="CurrencyRates.UYU" class="form-control" />
+                <span asp-validation-for="CurrencyRates.UYU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.UZS" class="control-label"></label>
+                <input asp-for="CurrencyRates.UZS" class="form-control" />
+                <span asp-validation-for="CurrencyRates.UZS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.VEF" class="control-label"></label>
+                <input asp-for="CurrencyRates.VEF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.VEF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.VND" class="control-label"></label>
+                <input asp-for="CurrencyRates.VND" class="form-control" />
+                <span asp-validation-for="CurrencyRates.VND" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.VUV" class="control-label"></label>
+                <input asp-for="CurrencyRates.VUV" class="form-control" />
+                <span asp-validation-for="CurrencyRates.VUV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.WST" class="control-label"></label>
+                <input asp-for="CurrencyRates.WST" class="form-control" />
+                <span asp-validation-for="CurrencyRates.WST" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XAF" class="control-label"></label>
+                <input asp-for="CurrencyRates.XAF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XAF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XAG" class="control-label"></label>
+                <input asp-for="CurrencyRates.XAG" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XAG" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XAU" class="control-label"></label>
+                <input asp-for="CurrencyRates.XAU" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XAU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XCD" class="control-label"></label>
+                <input asp-for="CurrencyRates.XCD" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XCD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XDR" class="control-label"></label>
+                <input asp-for="CurrencyRates.XDR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XDR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XOF" class="control-label"></label>
+                <input asp-for="CurrencyRates.XOF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XOF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.XPF" class="control-label"></label>
+                <input asp-for="CurrencyRates.XPF" class="form-control" />
+                <span asp-validation-for="CurrencyRates.XPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.YER" class="control-label"></label>
+                <input asp-for="CurrencyRates.YER" class="form-control" />
+                <span asp-validation-for="CurrencyRates.YER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ZAR" class="control-label"></label>
+                <input asp-for="CurrencyRates.ZAR" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ZAR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ZMK" class="control-label"></label>
+                <input asp-for="CurrencyRates.ZMK" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ZMK" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ZMW" class="control-label"></label>
+                <input asp-for="CurrencyRates.ZMW" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ZMW" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyRates.ZWL" class="control-label"></label>
+                <input asp-for="CurrencyRates.ZWL" class="form-control" />
+                <span asp-validation-for="CurrencyRates.ZWL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

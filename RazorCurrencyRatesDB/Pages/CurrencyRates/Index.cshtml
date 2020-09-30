@@ -1,0 +1,1050 @@
+﻿@page
+@model RazorCurrencyRatesDB.Pages.CurrencyRates.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].Base)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AED)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AFN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ALL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AMD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ANG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AOA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ARS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AUD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AWG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].AZN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BAM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BBD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BDT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BGN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BHD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BIF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BMD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BND)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BRL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BSD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BTC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BTN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BWP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BYN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BYR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].BZD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CAD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CDF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CHF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CLF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CLP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CNY)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].COP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CRC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CUC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CUP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CVE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].CZK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].DJF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].DKK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].DOP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].DZD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].EGP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ERN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ETB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].EUR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].FJD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].FKP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GBP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GEL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GGP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GHS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GMD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GNF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GTQ)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].GYD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].HKD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].HNL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].HRK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].HTG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].HUF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].IDR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ILS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].IMP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].INR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].IQD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].IRR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ISK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].JEP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].JMD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].JOD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].JPY)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KES)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KGS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KHR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KMF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KPW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KRW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KWD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KYD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].KZT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LAK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LBP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LKR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LRD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LSL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LTL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LVL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].LYD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MAD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MDL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MGA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MKD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MMK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MNT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MOP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MRO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MUR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MVR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MWK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MXN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MYR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].MZN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NAD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NGN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NOK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NPR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].NZD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].OMR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PAB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PEN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PGK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PHP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PKR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PLN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].PYG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].QAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].RON)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].RSD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].RUB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].RWF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SBD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SDG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SEK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SGD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SHP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SLL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SOS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SRD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].STD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SVC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SYP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].SZL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].THB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TJS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TND)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TOP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TRY)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TTD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TWD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].TZS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].UAH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].UGX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].USD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].UYU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].UZS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].VEF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].VND)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].VUV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].WST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XAF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XAG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XAU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XCD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XDR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XOF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].XPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].YER)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ZAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ZMK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ZMW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrencyRates[0].ZWL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CurrencyRates) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Base)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AFN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ALL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AMD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ANG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AOA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ARS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AUD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AWG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AZN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BAM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BBD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BGN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BIF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BMD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BRL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BSD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BTC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BTN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BWP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BYN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BYR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BZD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CAD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CDF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CHF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CLF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CLP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CNY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CRC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CUC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CUP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CVE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CZK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DJF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DKK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DZD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EGP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ERN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ETB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EUR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FJD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FKP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GBP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GEL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GGP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GHS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GMD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GNF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GTQ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GYD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HNL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HRK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HTG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HUF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ILS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IMP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IQD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IRR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JEP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JMD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JOD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JPY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KES)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KGS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KHR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KMF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KPW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KRW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KWD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KYD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KZT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LAK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LBP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LKR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LRD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LSL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LTL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LVL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LYD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MDL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MGA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MKD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MMK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MNT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MOP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MRO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MUR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MVR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MWK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MXN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MYR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MZN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NOK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NPR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NZD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OMR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PAB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PEN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PGK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PHP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PKR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PLN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PYG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RON)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RSD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RUB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RWF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SBD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SEK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SGD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SHP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SRD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SVC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SYP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SZL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.THB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TJS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TOP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TRY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TTD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TWD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TZS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UAH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UGX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.USD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UYU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UZS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VEF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VND)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VUV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WST)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XAF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XAG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XAU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XCD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XDR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XOF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YER)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZMK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZMW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZWL)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

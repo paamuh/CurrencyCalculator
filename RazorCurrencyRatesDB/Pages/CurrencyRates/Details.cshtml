@@ -1,0 +1,1039 @@
+﻿@page
+@model RazorCurrencyRatesDB.Pages.CurrencyRates.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>CurrencyRates</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.Base)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.Base)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AED)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AED)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AFN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AFN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ALL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ALL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AMD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AMD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ANG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ANG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AOA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AOA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ARS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ARS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AUD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AUD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AWG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AWG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.AZN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.AZN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BAM)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BAM)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BBD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BBD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BDT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BDT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BGN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BGN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BHD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BHD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BIF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BIF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BMD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BMD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BND)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BND)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BOB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BOB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BRL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BRL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BSD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BSD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BTC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BTC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BTN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BTN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BWP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BWP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BYN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BYN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BYR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BYR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.BZD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.BZD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CAD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CAD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CDF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CDF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CHF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CHF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CLF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CLF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CLP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CLP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CNY)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CNY)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.COP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.COP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CRC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CRC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CUC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CUC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CUP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CUP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CVE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CVE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.CZK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.CZK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.DJF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.DJF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.DKK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.DKK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.DOP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.DOP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.DZD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.DZD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.EGP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.EGP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ERN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ERN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ETB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ETB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.EUR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.EUR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.FJD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.FJD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.FKP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.FKP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GBP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GBP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GEL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GEL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GGP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GGP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GHS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GHS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GIP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GIP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GMD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GMD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GNF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GNF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GTQ)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GTQ)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.GYD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.GYD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.HKD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.HKD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.HNL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.HNL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.HRK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.HRK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.HTG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.HTG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.HUF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.HUF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.IDR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.IDR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ILS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ILS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.IMP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.IMP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.INR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.INR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.IQD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.IQD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.IRR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.IRR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ISK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ISK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.JEP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.JEP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.JMD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.JMD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.JOD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.JOD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.JPY)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.JPY)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KES)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KES)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KGS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KGS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KHR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KHR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KMF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KMF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KPW)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KPW)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KRW)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KRW)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KWD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KWD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KYD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KYD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.KZT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.KZT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LAK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LAK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LBP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LBP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LKR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LKR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LRD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LRD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LSL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LSL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LTL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LTL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LVL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LVL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.LYD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.LYD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MAD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MAD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MDL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MDL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MGA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MGA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MKD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MKD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MMK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MMK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MNT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MNT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MOP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MOP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MRO)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MRO)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MUR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MUR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MVR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MVR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MWK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MWK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MXN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MXN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MYR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MYR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.MZN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.MZN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NAD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NAD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NGN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NGN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NIO)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NIO)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NOK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NOK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NPR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NPR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.NZD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.NZD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.OMR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.OMR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PAB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PAB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PEN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PEN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PGK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PGK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PHP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PHP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PKR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PKR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PLN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PLN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.PYG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.PYG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.QAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.QAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.RON)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.RON)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.RSD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.RSD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.RUB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.RUB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.RWF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.RWF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SBD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SBD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SCR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SCR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SDG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SDG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SEK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SEK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SGD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SGD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SHP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SHP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SLL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SLL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SOS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SOS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SRD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SRD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.STD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.STD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SVC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SVC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SYP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SYP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.SZL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.SZL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.THB)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.THB)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TJS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TJS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TMT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TMT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TND)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TND)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TOP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TOP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TRY)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TRY)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TTD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TTD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TWD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TWD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.TZS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.TZS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.UAH)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.UAH)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.UGX)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.UGX)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.USD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.USD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.UYU)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.UYU)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.UZS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.UZS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.VEF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.VEF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.VND)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.VND)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.VUV)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.VUV)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.WST)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.WST)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XAF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XAF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XAG)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XAG)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XAU)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XAU)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XCD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XCD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XDR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XDR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XOF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XOF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.XPF)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.XPF)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.YER)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.YER)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ZAR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ZAR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ZMK)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ZMK)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ZMW)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ZMW)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrencyRates.ZWL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrencyRates.ZWL)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CurrencyRates.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
